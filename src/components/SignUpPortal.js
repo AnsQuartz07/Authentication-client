@@ -10,7 +10,7 @@ const SignUpPortal = () => {
         password: "",
         confirmPassword: "",
         age: "",
-        file: null,
+        // file: null,
     });
     const navigate = useNavigate();
     const { name, email, password, confirmPassword, age, file } = formData;
@@ -86,7 +86,7 @@ const SignUpPortal = () => {
                     { 
                         formData.confirmPassword.length > 0 && 
                         formData.password != formData.confirmPassword && 
-                        <span >password did not match</span>
+                        <span className="invalid-message" >password did not match</span>
                     }
                 </div>
                 <div className="input-group">
@@ -99,7 +99,7 @@ const SignUpPortal = () => {
                         // required
                     />
                 </div>
-                <div className="input-group">
+                {/* <div className="input-group">
                     <label>Upload Your ID Card:</label>
                     <input
                         type="file"
@@ -107,7 +107,7 @@ const SignUpPortal = () => {
                         accept=".jpg, .jpeg, .png, .pdf"
                         onChange={handleChange}
                     />
-                </div>
+                </div> */}
                 <div className="input-group">
                     <button type="submit">Create Account</button>
                 </div>

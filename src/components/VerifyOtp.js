@@ -21,7 +21,7 @@ const VerifyOtp = (props) => {
     });
     const [incorrectOtp, setIncorrectOtp] = useState(false);
     const [isVerify, setIsVerify] = useState(false)
-    const { email, password } = formData;
+    const { email, otp } = formData;
     console.log({params: formData})
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,7 +34,7 @@ const VerifyOtp = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form Data:", formData);
-        BackAction.activate(formData)
+        BackAction.verify(formData)
         .then(res => {
             if(res) {
                 setIsVerify('success');
@@ -61,8 +61,8 @@ const VerifyOtp = (props) => {
                         <label>verify your OTP :</label>
                         <input
                             type="password"
-                            name="password"
-                            value={password}
+                            name="otp"
+                            value={otp}
                             onChange={handleChange}
                             required
                         />

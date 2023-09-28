@@ -29,7 +29,7 @@ const BackAction = {
     },
     register: async (payload) => {
         try {
-            const response = await axios.post(``);
+            const response = await axios.post(`http://localhost:9000/api/user/register/`, payload);
             return true;
         }
         catch (e) {
@@ -37,14 +37,24 @@ const BackAction = {
             return false;
         }
     },
-    activate: async (payload) => {
+    login: async (payload) => {
         try {
-            const response = await axios.post(``);
+            const response = await axios.post(`http://localhost:9000/api/user/login/`, payload);
             return true;
         }
         catch (e) {
             console.log('[register API]', e);
+            return false;
+        }
+    },
+    verify: async (payload) => {
+        try {
+            const response = await axios.post(`http://localhost:9000/api/user/verify/`, payload);
             return true;
+        }
+        catch (e) {
+            console.log('[register API]', e);
+            return false;
         }
     },
 }

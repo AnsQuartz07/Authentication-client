@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Authentication-client/static/css/main.c48c06d2.css",
-    "main.js": "/Authentication-client/static/js/main.2898f8c3.js",
-    "static/js/787.60f9a516.chunk.js": "/Authentication-client/static/js/787.60f9a516.chunk.js",
-    "index.html": "/Authentication-client/index.html",
-    "main.c48c06d2.css.map": "/Authentication-client/static/css/main.c48c06d2.css.map",
-    "main.2898f8c3.js.map": "/Authentication-client/static/js/main.2898f8c3.js.map",
-    "787.60f9a516.chunk.js.map": "/Authentication-client/static/js/787.60f9a516.chunk.js.map"
+    "main.css": "/static/css/main.c48c06d2.css",
+    "main.js": "/static/js/main.fd6d5885.js",
+    "static/js/787.60f9a516.chunk.js": "/static/js/787.60f9a516.chunk.js",
+    "index.html": "/index.html",
+    "main.c48c06d2.css.map": "/static/css/main.c48c06d2.css.map",
+    "main.fd6d5885.js.map": "/static/js/main.fd6d5885.js.map",
+    "787.60f9a516.chunk.js.map": "/static/js/787.60f9a516.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c48c06d2.css",
-    "static/js/main.2898f8c3.js"
+    "static/js/main.fd6d5885.js"
   ]
 }

@@ -7,9 +7,9 @@ import VerifyOtp from './components/VerifyOtp';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='Authentication-client'>
             <Routes>
-                <Route path="/" exact element={<Home />} />
+                <Route path="/Authentication-client/" exact element={<Home />} />
                 <Route path="/signup" element={<SignUpPortal />} />
                 <Route path="/signin" element={<SignInPortal/>} />
                 <Route path="/verify" element={<VerifyOtp />} />
